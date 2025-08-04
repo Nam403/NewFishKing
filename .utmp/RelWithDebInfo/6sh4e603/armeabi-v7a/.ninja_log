@@ -1,0 +1,23 @@
+# ninja log v5
+12	1433	7755960273582314	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	403f322d1bb4c2d1
+53	270	7755960261811024	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	c5d64aca94d66820
+272	502	7755960263963583	D:/CodeProjects/NewFishKing/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6sh4e603/obj/armeabi-v7a/libswappywrapper.so	9451ea2a13c768c0
+23	1151	7755960270793186	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	1108b3fa939a517f
+30	1173	7755960271007062	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	67fa15bab15db05
+1	1225	7755960271538443	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	7ceeb3b7a233f40a
+37	1186	7755960271137668	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	75e4074500e00893
+46	1283	7755960272151644	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	534a97b41e6b2c04
+7	1202	7755960271312961	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	802ba18d96de1be9
+17	1359	7755960272897464	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	bbaf5cf97c281954
+1433	1500	7755960274317002	D:/CodeProjects/NewFishKing/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6sh4e603/obj/armeabi-v7a/libgame.so	9f4fa5d6299eff4c
+58	222	7760098758660998	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	c5d64aca94d66820
+222	459	7760098760758970	D:/CodeProjects/NewFishKing/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6sh4e603/obj/armeabi-v7a/libswappywrapper.so	9451ea2a13c768c0
+11	1238	7760098768797077	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	1108b3fa939a517f
+41	1242	7760098768817121	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	67fa15bab15db05
+35	1295	7760098769382562	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	75e4074500e00893
+17	1304	7760098769462883	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	802ba18d96de1be9
+23	1331	7760098769724101	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	7ceeb3b7a233f40a
+50	1343	7760098769839726	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	534a97b41e6b2c04
+29	1549	7760098771929510	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	bbaf5cf97c281954
+5	1620	7760098772606475	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	403f322d1bb4c2d1
+1620	1720	7760098773659827	D:/CodeProjects/NewFishKing/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6sh4e603/obj/armeabi-v7a/libgame.so	9f4fa5d6299eff4c
