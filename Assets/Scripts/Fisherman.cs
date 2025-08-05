@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class Fisherman : MonoBehaviour
 {
+    [SerializeField] float maxUpDown = 0.2f;
+    [SerializeField] float level = 0.01f;
     private Vector3 initPosition, curPosition;
-    public float maxUpDown = 0.2f;
-    public float level = 0.01f;
     private int state = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

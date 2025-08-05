@@ -7,6 +7,15 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    public static int Level = 1;  
+    public static float Timer = 60;
+    public static bool GameIsOver;
+
+    [SerializeField] TextMeshProUGUI timeText;
+    [SerializeField] TextMeshProUGUI levelText;
+    [SerializeField] float startTime = 60;
+    [SerializeField] GameObject gameOverUI;
+    [SerializeField] GameObject completeLevelUI;
     private void Awake()
     {
         if (instance != null)
@@ -16,23 +25,6 @@ public class GameManager : MonoBehaviour
         }
         instance = this;
     }
-
-    public static int Level = 1;
-    public static int Coin = 0;
-    public static float Timer = 60;
-    public static int Target = 1500;
-    public static bool GameIsOver;
-
-    private int OldCoin = 0;
-
-    public TextMeshProUGUI timeText;
-    public TextMeshProUGUI levelText;
-
-    public int startCoin = 1000;    
-    public float startTime = 60;
-
-    public GameObject gameOverUI;
-    public GameObject completeLevelUI;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -46,22 +38,20 @@ public class GameManager : MonoBehaviour
         if (level == 1)
         {
             Level = 1;
-            Coin = startCoin;
-            OldCoin = startCoin;
+            CoinManager.instance.SetUp(0);
         }
         else
         {
             if (level > Level)
             {
                 Level = level;
-                OldCoin = Coin;
+                CoinManager.instance.SetUp(1);
             }
             else
             {
-                Coin = OldCoin;
+                CoinManager.instance.SetUp(-1);
             }
         }
-        Target = Coin / 100 * 150;
         Timer = startTime;
 
         ElementManager.instance.SetUp();
@@ -79,13 +69,13 @@ public class GameManager : MonoBehaviour
         {
             GameIsOver = true;
             ElementManager.instance.CleanAllElement();
-            if (Coin < Target)
+            if (CoinManager.instance.GetTarget())
             {
-                EndGame();
+                WinLevel();
             }
             else
             {
-                WinLevel();
+                EndGame();
             }
         }
 

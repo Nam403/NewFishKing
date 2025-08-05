@@ -3,10 +3,11 @@ using UnityEngine;
 public class Water : MonoBehaviour
 {
     private float initPosition;
-    private Vector2 position;
-    public float speed = 0.005f, speedH = 0.001f;
-    public float target = 5.6f;
     private float minHeight, maxHeight;
+    private Vector2 position;
+
+    [SerializeField] float speed = 0.005f, speedH = 0.001f;
+    [SerializeField] float target = 5.6f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

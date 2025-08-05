@@ -3,9 +3,9 @@ using UnityEngine;
 public class SwimElement : MonoBehaviour
 {
     protected Vector3 position, currentPosition;
-    public float speed = 1f;
     protected float livingTime;
     public int price;
+    [SerializeField] float speed = 1f;
 
     protected void Swim()
     {
@@ -22,7 +22,7 @@ public class SwimElement : MonoBehaviour
 
     protected virtual void OnMouseDown()
     {
-        GameManager.Coin += price;
+        CoinManager.Coin += price;
         Destroy(gameObject);
     }
 }

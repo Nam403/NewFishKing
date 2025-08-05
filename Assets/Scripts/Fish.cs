@@ -4,9 +4,9 @@ using UnityEngine.InputSystem.XR;
 
 public class Fish : SwimElement
 {
-    public float startLivingTime = 20f;
-    public int minPrice = 200;
-    public int maxPrice = 500;
+    [SerializeField] float startLivingTime = 20f;
+    [SerializeField] int minPrice = 200;
+    [SerializeField] int maxPrice = 500;
 
     private float grownTime = 15f;
     private float birthTime = 10f;

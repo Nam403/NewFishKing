@@ -3,7 +3,7 @@ using UnityEngine.InputSystem.XR;
 
 public class Garbage : SwimElement
 {
-    public float cloneTime = 5f;
+    [SerializeField] float cloneTime = 5f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

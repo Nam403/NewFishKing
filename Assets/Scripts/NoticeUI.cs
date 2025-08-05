@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class NoticeUI : MonoBehaviour
 {
-    public GameObject ui;
+    [SerializeField] GameObject ui;
 
     public void LoadUI()
     {
