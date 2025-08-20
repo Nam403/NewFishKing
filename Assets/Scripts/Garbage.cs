@@ -23,13 +23,13 @@ public class Garbage : SwimElement
         Countdown();
     }
 
-    /*private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.gameObject.CompareTag("Fish"))
+        if (collider.gameObject.CompareTag("Fish"))
         {
-            Destroy(collision.gameObject);
+            Destroy(collider.gameObject);
         }
-    }*/
+    }
 
     private void Countdown()
     {
