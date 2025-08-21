@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class SwimElement : MonoBehaviour
+public class SwimElement : MonoBehaviour, IPointerClickHandler
 {
     protected Vector3 position, currentPosition;
     protected float livingTime;
@@ -20,7 +21,7 @@ public class SwimElement : MonoBehaviour
         GetComponent<Transform>().position = currentPosition;
     }
 
-    protected virtual void OnMouseDown()
+    public virtual void OnPointerClick(PointerEventData eventData)
     {
         CoinManager.Coin += price;
         Destroy(gameObject);

@@ -1,6 +1,5 @@
-using JetBrains.Annotations;
 using UnityEngine;
-using UnityEngine.InputSystem.XR;
+using UnityEngine.EventSystems;
 
 public class Fish : SwimElement
 {
@@ -91,10 +90,10 @@ public class Fish : SwimElement
         if (livingTime <= deathTime) Destroy(gameObject);
     }
 
-    protected override void OnMouseDown()
+    public override void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log("Sell fish");
         ElementManager.FishAmount--;
-        base.OnMouseDown();
+        base.OnPointerClick(eventData);
     }
 }

@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.InputSystem.XR;
+using UnityEngine.EventSystems;
 
 public class Garbage : SwimElement
 {
@@ -41,10 +41,10 @@ public class Garbage : SwimElement
         }
     }
 
-    protected override void OnMouseDown()
+    public override void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log("Destroy Garbage");
         ElementManager.GarbageAmount--;
-        base.OnMouseDown();
+        base.OnPointerClick(eventData);
     }
 }
