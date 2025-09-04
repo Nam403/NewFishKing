@@ -1,2 +1,2 @@
 # NewFishKing
-Unity 2D game demo
+Unity 2D fish farming game demo
