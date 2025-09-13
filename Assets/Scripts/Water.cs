@@ -3,18 +3,15 @@ using UnityEngine;
 public class Water : MonoBehaviour
 {
     private float initPosition;
-    private float minHeight, maxHeight;
     private Vector2 position;
 
-    [SerializeField] float speed = 0.005f, speedH = 0.001f;
-    [SerializeField] float target = 5.6f;
+    [SerializeField] float speed = 0.005f;
+    [SerializeField] float target = 5.5f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         initPosition = GetComponent<Transform>().position.x;
-        minHeight = GetComponent<Transform>().position.y;
-        maxHeight = minHeight + 1;
     }
 
     // Update is called once per frame
