@@ -37,7 +37,7 @@ public class Garbage : SwimElement
         if (livingTime <= 0)
         {
             livingTime = cloneTime;
-            ElementManager.instance.AddGarbage(GetComponent<Transform>().position);
+            ElementManager.Instance.AddGarbage(GetComponent<Transform>().position);
         }
     }
 

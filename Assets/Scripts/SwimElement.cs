@@ -11,7 +11,7 @@ public class SwimElement : MonoBehaviour, IPointerClickHandler
     protected void Swim()
     {
         if (GetComponent<Transform>().position == position)
-            position = ElementManager.instance.GetRandomPosition();
+            position = ElementManager.Instance.GetRandomPosition();
 
         if (GetComponent<Transform>().position.x <= position.x)
             GetComponent<SpriteRenderer>().flipX = false;

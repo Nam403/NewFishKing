@@ -4,16 +4,16 @@ using TMPro;
 
 public class CoinManager : MonoBehaviour
 {
-    public static CoinManager instance;
+    public static CoinManager Instance;
 
     private void Awake()
     {
-        if (instance != null)
+        if (Instance != null)
         {
             Debug.Log("More than one CoinManager in scene!");
             return;
         }
-        instance = this;
+        Instance = this;
     }
 
     [SerializeField] TextMeshProUGUI coinText;
@@ -67,7 +67,7 @@ public class CoinManager : MonoBehaviour
         if(Coin >= fishPrice)
         {
             Coin -= fishPrice;
-            ElementManager.instance.AddFish(ElementManager.instance.GetRandomPosition());
+            ElementManager.Instance.AddFish(ElementManager.Instance.GetRandomPosition());
         }
     }
 
@@ -76,7 +76,7 @@ public class CoinManager : MonoBehaviour
         if (Coin >= pryPrice)
         {
             Coin -= pryPrice;
-            ElementManager.instance.AddFry(ElementManager.instance.GetRandomPosition());
+            ElementManager.Instance.AddFry(ElementManager.Instance.GetRandomPosition());
         }
     }
 }

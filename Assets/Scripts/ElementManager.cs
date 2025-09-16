@@ -15,16 +15,16 @@ public class ElementManager : MonoBehaviour
     private int pollutedTime;
     private bool isPolluted;
 
-    public static ElementManager instance;
+    public static ElementManager Instance;
 
     private void Awake()
     {
-        if (instance != null)
+        if (Instance != null)
         {
             Debug.Log("More than one ElementManager in scene!");
             return;
         }
-        instance = this;
+        Instance = this;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

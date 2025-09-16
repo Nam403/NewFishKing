@@ -68,7 +68,7 @@ public class Fish : SwimElement
 
         if(livingTime <= birthTime && livingTime > oldTime &&  childCount == 0 && ElementManager.GarbageAmount == 0) 
         {
-            ElementManager.instance.AddFry(GetComponent<Transform>().position);
+            ElementManager.Instance.AddFry(GetComponent<Transform>().position);
             childCount++; 
         }
 

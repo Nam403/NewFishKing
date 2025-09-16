@@ -3,6 +3,6 @@ public class CompleteLevel : NoticeUI
     public void Continue()
     {
         LoadUI();
-        GameManager.instance.SetUp(GameManager.Level + 1);
+        GameManager.Instance.SetUp(GameManager.Level + 1);
     }
 }

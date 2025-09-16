@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour    
 {
-    public static GameManager instance;
+    public static GameManager Instance;
 
     public static int Level = 1;  
     public static float Timer = 60;
@@ -18,12 +18,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject completeLevelUI;
     private void Awake()
     {
-        if (instance != null)
+        if (Instance != null)
         {
             Debug.Log("More than one GameManager in scene!");
             return;
         }
-        instance = this;
+        Instance = this;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -38,23 +38,23 @@ public class GameManager : MonoBehaviour
         if (level == 1)
         {
             Level = 1;
-            CoinManager.instance.SetUp(0);
+            CoinManager.Instance.SetUp(0);
         }
         else
         {
             if (level > Level)
             {
                 Level = level;
-                CoinManager.instance.SetUp(1);
+                CoinManager.Instance.SetUp(1);
             }
             else
             {
-                CoinManager.instance.SetUp(-1);
+                CoinManager.Instance.SetUp(-1);
             }
         }
         Timer = startTime;
 
-        ElementManager.instance.SetUp();
+        ElementManager.Instance.SetUp();
     }
 
     // Update is called once per frame
@@ -68,8 +68,8 @@ public class GameManager : MonoBehaviour
         if(Timer <= 0)
         {
             GameIsOver = true;
-            ElementManager.instance.CleanAllElement();
-            if (CoinManager.instance.GetTarget())
+            ElementManager.Instance.CleanAllElement();
+            if (CoinManager.Instance.GetTarget())
             {
                 WinLevel();
             }
